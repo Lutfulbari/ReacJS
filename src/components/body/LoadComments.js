@@ -1,5 +1,5 @@
 import React from 'react';
-import dataFormat from 'dateformat';
+import dateFormat from 'dateformat';
 
 const LoadComments = props => {
     return (
