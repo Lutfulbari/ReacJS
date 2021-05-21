@@ -29,6 +29,7 @@ handleSubmit = event =>{
 }
 
     render() {
+        document.title= "Contact";
         return (
             <div className="container">
                 <div className="row row-content" style={{ paddingLeft: "20px", textAlign:"left"}}>
@@ -53,7 +54,8 @@ handleSubmit = event =>{
                          <FormGroup row>
                             <lable htmlFor="lastname" md={2}>Last Name</lable>
                             <Col md={10}>
-                                <Input type="text" 
+                                <Input 
+                                type="text" 
                                 name="lastname" 
                                 placeholder="lastname" 
                                 value={this.state.lastname} placeholder="Last name"
@@ -132,7 +134,8 @@ handleSubmit = event =>{
                             <Col md={{size: 10, offset:2}}>
                                 <Button 
                                 type="submit" 
-                                color="primary">Send Feedback</Button>
+                                color="primary">Send Feedback
+                                </Button>
                             </Col>
                         </FormGroup>
                      </Form>
